@@ -1,0 +1,237 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 300px;
+}
+
+section.top-page {
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    height: 80vh;
+   
+    padding: 25px;
+}
+
+/* page de bienvenue (landing page) */
+
+.landing-page {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: white;
+    font-size:  120px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    width: 60%;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* services */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: rgb(86, 40, 214);
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+.details-jeux {
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.name-jeux {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.price-jeux {
+    color: rgb(86, 40, 214);
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* Mes jeux */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(86, 40, 214);
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items {
+    margin: 100px;
+}
+
+.best-jeux {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jeux-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.jeux1 {
+    background-image: url(../images/mes_jeux_preferer/1.jpg);
+}
+
+.jeux2 {
+    background-image: url(../images/mes_jeux_preferer/2.jpg);
+}
+
+.jeux3 {
+    background-image: url(../images/mes_jeux_preferer/3.jpg);
+}
+
+.jeux4 {
+    background-image: url(../images/mes_jeux_preferer/4.jpg);
+}
+
+
+
+/* Mon setup */
+
+.all-composants {
+    margin: 100px;
+}
+
+.composants-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+}
+
+.composants-grid1 {
+    background-image: url(../images/setup/1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.composants-grid2 {
+    background-image: url(../images/setup/2.jpg);
+    grid-column: 3/5;
+}
+
+.composants-grid3 {
+    background-image: url(../images/setup/3.jpg);
+    grid-column: 3/5;
+}
+
+.composants-grid4 {
+    background-image: url(../images/setup/4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.composants-grid5 {
+    background-image: url(../images/setup/5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.composants-grid6 {
+    background-image: url(../images/setup/6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+
+
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
